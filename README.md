@@ -1,29 +1,53 @@
 # tugas_pbo
 Fungsional programming dan Object-Oriented Programming (OOP)
-Fungsional programming dan Object-Oriented Programming (OOP) adalah dua paradigma pemrograman yang berbeda. Pada fungsional programming, program dibangun dengan cara menggunakan fungsi sebagai dasar pembuatan program. Fungsi pada fungsional programming bersifat immutable, artinya tidak dapat diubah setelah didefinisikan, dan tidak memiliki state. Sedangkan pada OOP, program dibangun dengan cara menggunakan objek sebagai dasar pembuatan program. Objek pada OOP memiliki state dan behaviour, dan dapat diubah melalui metode yang didefinisikan.
+# Contoh program fungsional programming pada Python:
+# Fungsi rekursif untuk menghitung faktorial
+def faktorial(n):
+    if n == 0:
+        return 1
+    else:
+        return n * faktorial(n-1)
 
-Berikut adalah penjelasan singkat dan contoh program dari kedua paradigma tersebut dalam bahasa Python:
+print(faktorial(5))'''
 
-- Functional Programming
-Functional programming adalah paradigma pemrograman yang berfokus pada fungsi-fungsi. Fungsi-fungsi tersebut memetakan input ke output tanpa adanya perubahan pada variabel global. Pemrograman fungsional lebih fokus pada pemrosesan data daripada memodifikasi keadaan program. Beberapa contoh fitur dari pemrograman fungsional antara lain adalah fungsi renik dan immutable data structure.
-Fungsional programming lebih berfokus pada fungsi-fungsi matematis dan bagaimana fungsi-fungsi ini digunakan untuk menghasilkan nilai. Fungsional programming sering kali menggunakan konsep immutability, yaitu data yang tidak dapat diubah setelah dibuat. Beberapa karakteristik fungsional programming antara lain:
+# Contoh program untuk menghitung kuadrat dari setiap bilangan dalam list
+'''numbers = [1, 2, 3, 4, 5]
 
-(1.) Immutability: data tidak dapat diubah setelah dibuat
-(2.) Pure functions: fungsi-fungsi yang tidak memiliki efek samping dan selalu mengembalikan hasil yang sama untuk argumen yang sama
-(3.) Higher-order functions: fungsi yang dapat menerima fungsi lain sebagai argumen dan mengembalikan fungsi sebagai hasilnya
+squares = list(map(lambda x: x**2, numbers))
 
-- Object-Oriented Programming
-OOP adalah paradigma pemrograman yang berfokus pada objek dan hubungan antar objek. OOP menggunakan konsep seperti pewarisan, polimorfisme, dan enkapsulasi untuk mengatur kode menjadi unit yang terorganisir dengan baik. OOP memungkinkan pengguna untuk memecah masalah menjadi objek yang lebih kecil dan membentuk hierarki objek.
-OOP (Object-Oriented Programming) lebih berfokus pada objek-objek dan bagaimana objek-objek ini saling berinteraksi. Pada OOP, program diorganisir menjadi kelas-kelas, dan setiap kelas memiliki atribut-atribut dan metode-metode yang memungkinkan objek dari kelas tersebut berinteraksi. Beberapa karakteristik OOP antara lain:
+print(squares)
 
-(1.) Encapsulation: menyembunyikan implementasi detail dari luar kelas, dan hanya memperbolehkan akses melalui metode-metode publik
-(2.) Inheritance: memungkinkan sebuah kelas untuk mengambil atribut-atribut dan metode-metode dari kelas lain
-(3.) Polymorphism: memungkinkan objek dari kelas yang berbeda untuk merespons metode yang sama dengan cara yang berbeda
 
-Berikut adalah perbedaan antara FP dan OOP pada Python:
 
-1.) Pendekatan pemrograman: FP adalah paradigma pemrograman yang berfokus pada fungsi dan nilai-nilai yang diteruskan ke fungsi tersebut, sedangkan OOP adalah paradigma pemrograman yang berfokus pada objek dan interaksi antara objek tersebut.
+# Contoh program OOP pada Python:
+# Membuat kelas Mahasiswa
+class Mahasiswa:
+    def __init__(self, nama, npm):
+        self.nama = nama
+        self.npm = npm
 
-2.) Keadaan: FP lebih cenderung tidak memiliki state (keadaan), artinya setiap fungsi hanya bergantung pada masukan (input) dan output yang dihasilkan. Sementara itu, OOP memperbolehkan objek menyimpan state yang mempengaruhi perilaku objek dan metodenya.
+    def info(self):
+        print(f"Nama: {self.nama}, NPM: {self.npm}")
 
-3.) Pembuatan kode: Dalam FP, kode dibuat dengan membuat fungsi-fungsi yang dijalankan secara berulang dengan data yang diberikan kepadanya, sedangkan OOP membuat objek dengan properti dan metodenya yang diakses oleh program.
+# Membuat objek dari kelas Mahasiswa
+mhs1 = Mahasiswa("Neli Agustin", "G1A022048")
+mhs2 = Mahasiswa("Ulfa  Stevi Juliana", "G1A022042")
+
+# Memanggil metode info pada objek mhs1 dan mhs2
+mhs1.info()
+mhs2.info()
+
+
+# Contoh program untuk menghitung volume bola
+import math
+
+class Sphere:
+    def __init__(self, radius):
+        self.radius = radius
+
+    def volume(self):
+        return (4/3) * math.pi * self.radius ** 3
+
+sphere = Sphere(5)
+
+print(sphere.volume())
