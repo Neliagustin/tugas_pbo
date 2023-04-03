@@ -8,10 +8,10 @@ def faktorial(n):
     else:
         return n * faktorial(n-1)
 
-print(faktorial(5))'''
+print(faktorial(5))
 
 # Contoh program untuk menghitung kuadrat dari setiap bilangan dalam list
-'''numbers = [1, 2, 3, 4, 5]
+numbers = [1, 2, 3, 4, 5]
 
 squares = list(map(lambda x: x**2, numbers))
 
