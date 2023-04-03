@@ -8,17 +8,17 @@ Berikut adalah penjelasan singkat dan contoh program dari kedua paradigma terseb
 Functional programming adalah paradigma pemrograman yang berfokus pada fungsi-fungsi. Fungsi-fungsi tersebut memetakan input ke output tanpa adanya perubahan pada variabel global. Pemrograman fungsional lebih fokus pada pemrosesan data daripada memodifikasi keadaan program. Beberapa contoh fitur dari pemrograman fungsional antara lain adalah fungsi renik dan immutable data structure.
 Fungsional programming lebih berfokus pada fungsi-fungsi matematis dan bagaimana fungsi-fungsi ini digunakan untuk menghasilkan nilai. Fungsional programming sering kali menggunakan konsep immutability, yaitu data yang tidak dapat diubah setelah dibuat. Beberapa karakteristik fungsional programming antara lain:
 
-Immutability: data tidak dapat diubah setelah dibuat
-Pure functions: fungsi-fungsi yang tidak memiliki efek samping dan selalu mengembalikan hasil yang sama untuk argumen yang sama
-Higher-order functions: fungsi yang dapat menerima fungsi lain sebagai argumen dan mengembalikan fungsi sebagai hasilnya
+a. Immutability: data tidak dapat diubah setelah dibuat
+b. Pure functions: fungsi-fungsi yang tidak memiliki efek samping dan selalu mengembalikan hasil yang sama untuk argumen yang sama
+c. Higher-order functions: fungsi yang dapat menerima fungsi lain sebagai argumen dan mengembalikan fungsi sebagai hasilnya
 
 - Object-Oriented Programming
 OOP adalah paradigma pemrograman yang berfokus pada objek dan hubungan antar objek. OOP menggunakan konsep seperti pewarisan, polimorfisme, dan enkapsulasi untuk mengatur kode menjadi unit yang terorganisir dengan baik. OOP memungkinkan pengguna untuk memecah masalah menjadi objek yang lebih kecil dan membentuk hierarki objek.
 OOP (Object-Oriented Programming) lebih berfokus pada objek-objek dan bagaimana objek-objek ini saling berinteraksi. Pada OOP, program diorganisir menjadi kelas-kelas, dan setiap kelas memiliki atribut-atribut dan metode-metode yang memungkinkan objek dari kelas tersebut berinteraksi. Beberapa karakteristik OOP antara lain:
 
-Encapsulation: menyembunyikan implementasi detail dari luar kelas, dan hanya memperbolehkan akses melalui metode-metode publik
-Inheritance: memungkinkan sebuah kelas untuk mengambil atribut-atribut dan metode-metode dari kelas lain
-Polymorphism: memungkinkan objek dari kelas yang berbeda untuk merespons metode yang sama dengan cara yang berbeda
+a. Encapsulation: menyembunyikan implementasi detail dari luar kelas, dan hanya memperbolehkan akses melalui metode-metode publik
+b. Inheritance: memungkinkan sebuah kelas untuk mengambil atribut-atribut dan metode-metode dari kelas lain
+c. Polymorphism: memungkinkan objek dari kelas yang berbeda untuk merespons metode yang sama dengan cara yang berbeda
 
 Berikut adalah perbedaan antara FP dan OOP pada Python:
 
