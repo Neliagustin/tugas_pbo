@@ -29,11 +29,9 @@ class Mahasiswa:
     def info(self):
         print(f"Nama: {self.nama}, NPM: {self.npm}")
 
-# Membuat objek dari kelas Mahasiswa
 mhs1 = Mahasiswa("Neli Agustin", "G1A022048")
 mhs2 = Mahasiswa("Ulfa  Stevi Juliana", "G1A022042")
 
-# Memanggil metode info pada objek mhs1 dan mhs2
 mhs1.info()
 mhs2.info()
 
